@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/invite_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:text="苹果"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/invite_num"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="x 10"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/invite_price"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/invite_delete_BT"
+        android:layout_marginRight="15dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:text="￥15"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        />
+    
+    <Button
+        android:id="@+id/invite_delete_BT"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/remove"
+        />
+
+
+</RelativeLayout>

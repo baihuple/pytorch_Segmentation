@@ -1,0 +1,10 @@
+<!--pages/index/sort_navigate/typeList/typeList.wxml-->
+<!-- 引入列表模板 -->
+<import src="../../product_template/productList.wxml"/>
+
+<view class="wrapper">
+    <view wx:for="{{list}}" wx:key="aaa">
+        <template is="list" data="{{item}}"></template>
+    </view>
+</view>
+

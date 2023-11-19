@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout
+        android:background="@drawable/successback"
+        android:layout_width="380dp"
+        android:layout_height="470dp">
+
+        <TextView
+            android:id="@+id/success_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:text="Success"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/AD_success_text"
+            android:layout_below="@+id/success_symbol"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:text="添加成功"
+            />
+
+        <Button
+            android:id="@+id/BT_success"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/AD_success_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:text="OK"
+            android:textSize="20dp"
+            android:background="@drawable/alertdialog_success"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

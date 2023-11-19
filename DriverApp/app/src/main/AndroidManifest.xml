@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 读文件权限 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 使用特性 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 查看手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".application"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DriverApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".LaunchSimpleActivity"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".Ad_detail"
+            android:exported="false" />
+        <activity
+            android:name=".Ad_management"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomePage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".StationContact"
+            android:exported="false" />
+        <activity
+            android:name=".WebSocketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryBill"
+            android:exported="false" />
+        <activity
+            android:name=".ControlDevice"
+            android:exported="false" />
+        <activity
+            android:name=".AddProductScan"
+            android:exported="false" />
+        <activity
+            android:name=".AddProductResult"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePrice"
+            android:exported="false" />
+        <activity
+            android:name=".Search"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryOrder"
+            android:exported="false" />
+        <activity
+            android:name=".pay_code"
+            android:exported="false" />
+        <activity
+            android:name=".ShoppingCar"
+            android:exported="false" />
+        <activity
+            android:name=".StationDetail"
+            android:exported="false" />
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="IGRBZ-OKRWJ-UPWFI-XE545-WSI7T-5WBSL" />
+
+        <activity
+            android:name=".MapLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePhone"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Register_second"
+            android:exported="false" />
+        <activity
+            android:name=".ScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Register_first"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,201 @@
+/* pages/about/about.wxss */
+page{
+    background: #F6F5F5;
+}
+
+/* 顶部用户框布局 */
+.header{
+    position: relative;
+    background: #1c84fa;
+    height: 250rpx;
+    border-radius: 15rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;   
+    display: flex;                                         /* 弹性盒子布局 */
+}
+
+.header .avator{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 20rpx;
+    margin-top: 40rpx;
+    margin-left: 30rpx;
+    border-radius: 50%;
+}
+
+.header .scan{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 20rpx;
+    margin-top: 40rpx;
+    right: 0;
+    position: absolute;
+}
+
+.header .top_text{
+    margin-top: 70rpx;
+    margin-left: 10rpx;
+}
+
+.scan_account{
+    position: absolute;
+    right: 0;
+    margin-top: 100rpx;
+    margin-right: 18rpx;
+    color: white;
+}
+
+.header .top_text .top_text_content{
+    display: flex;
+}
+
+.header .top_text_one{
+    font-size: 40rpx;
+    color: white;
+}
+
+.header .top_text_two{
+    margin-top: 15rpx;
+    font-size: 30rpx;
+    color: white;
+}
+
+.header .top_text_three{
+    margin-top: 15rpx;
+    margin-left: 30rpx;
+    font-size: 30rpx;
+    color: white;
+}
+
+/* 中间栏一 */
+.center_one{
+    margin-top: 100rpx;
+    background: white;
+    height: 270rpx;
+
+    border-radius: 15rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;   
+}
+
+.form_item{
+    display: flex;                                        /* 表单项，弹性盒子布局 */
+    position: relative;
+
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    border-bottom: 1rpx solid #f5f0f0;
+}
+
+.center_one .form_item_three{
+    display: flex;
+    padding-top: 20rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+
+    position: relative;
+}
+
+.form_image{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.form_anchor{
+    position: absolute;
+    right: 0;
+    margin-top: 10rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.form_view{
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+}
+
+/* 中间栏二 */
+.center_two{
+    margin-top: 30rpx;
+    background: white;
+    height: 95rpx;
+
+    border-radius: 15rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;   
+}
+
+.center_two .form_item_two{
+    display: flex;
+    padding-top: 20rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+
+    position: relative;
+}
+
+/* 中间栏三 */
+.center_three{
+    margin-top: 30rpx;
+    background: white;
+    height: 90rpx;
+
+    border-radius: 15rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;   
+}
+
+
+/* 退出登录 */
+.logout{
+    background: #ff0008;
+    margin-top: 120rpx;
+    border: 1rpx solid #E4DBDB;
+    height: 100rpx;
+
+    text-align: center;
+    line-height: 90rpx;
+
+    color: white;
+    font-size: 48rpx;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+
+}
+
+/* 点击退出登录 */
+.press_style_login{
+    margin-top: 120rpx;
+    border: 1rpx solid #E4DBDB;
+    height: 100rpx;
+
+    text-align: center;
+    line-height: 90rpx;
+
+    color: white;
+    font-size: 48rpx;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    background: #d31219;
+}
+
+/* 填写表单内容 */
+.form_content{
+    line-height: 55rpx;
+    position: absolute;
+
+    right: 0px;
+}
+
+.form_item_three .form_content{
+    line-height: 55rpx;
+    position: absolute;
+    right: 0px;
+}
+

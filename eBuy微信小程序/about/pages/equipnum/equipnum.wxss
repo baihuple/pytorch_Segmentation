@@ -1,0 +1,89 @@
+page{
+    background: #ffffff;
+}
+
+.login_text{
+    font-weight: 700;
+    font-size: 70rpx;
+    margin-left: 50rpx;
+    margin-top: 130rpx;
+}
+
+image{
+    height: 500rpx;
+    width: 500rpx;
+}
+
+.head view{
+    font-size: 60rpx;
+    margin-left: 40rpx;
+    margin-top: 100rpx;
+}
+
+.middle{
+    margin-top: 300rpx;
+}
+
+.form_item{
+    display: flex;                                        /* 表单项，弹性盒子布局 */
+    position: relative;
+    margin-bottom: 40rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+
+    background: white;
+    border-bottom: 1rpx solid #f5f0f0;
+}
+
+.form_image{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.form_view{
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+}
+
+/* 输入框样式 */
+.input_setting{
+    position: absolute;
+    margin-left: 200rpx;
+    margin-top: 10rpx;
+}
+
+/* 登陆 */
+.sign{
+    margin-top: 120rpx;
+    background: #1c84fa;
+    border: 1rpx solid #E4DBDB;
+    height: 100rpx;
+
+    text-align: center;
+    line-height: 90rpx;
+
+    color: white;
+    font-size: 48rpx;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+
+.press_style_sign{
+    margin-top: 120rpx;
+    background: #074892;
+    border: 1rpx solid #E4DBDB;
+    height: 100rpx;
+
+    text-align: center;
+    line-height: 90rpx;
+
+    color: white;
+    font-size: 48rpx;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}

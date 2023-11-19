@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/driver_purID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="司机 ID："
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/dri_purID"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/driver_purID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        />
+
+    <TextView
+        android:id="@+id/driver_purPro"
+        android:layout_below="@id/driver_purTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="补货商品："
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/dri_purTime"
+        android:layout_below="@id/driver_purID"
+        android:layout_toRightOf="@id/driver_purPro"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="2022-5-13"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/driver_purTime"
+        android:layout_below="@id/driver_purID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预约时间："
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/dri_purPro"
+        android:layout_below="@id/driver_purTime"
+        android:layout_toRightOf="@id/driver_purPro"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="橘子，苹果"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/dri_purNum"
+        android:layout_below="@id/driver_purPro"
+        android:layout_toRightOf="@id/driver_purNum"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="13"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/driver_purNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数量："
+        android:textStyle="bold"
+        android:layout_below="@id/driver_purPro"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="待"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/success_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/success"
+        />
+
+    <ImageView
+        android:id="@+id/fail_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/fail"
+        />
+
+    <ImageView
+        android:id="@+id/timeout_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fail_button"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/timeout"
+        />
+
+
+
+</RelativeLayout>

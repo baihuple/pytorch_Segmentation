@@ -1,0 +1,13 @@
+<template name="list">
+    <view class="list">
+        <!-- 先简写，引入模版到页面中在改样式 -->
+        <image src='{{item.imageURL}}' class="product_image"></image> <!-- 相对页面 -->
+        <view class="info">
+            <view class="title">{{item.comName}}</view>
+            <view class="desc2">{{item.comBrand}}</view>
+            <view class="desc">剩余：{{item.number}}</view>
+            <view class="buyNum"><text class="red">¥{{item.price}}</text></view>
+        </view>
+        <image src='/pages/index/product_ex/plus.png' class="plus" bindtap="addMall" data-item="{{item}}"></image> <!-- 相对页面 -->
+    </view>
+</template>

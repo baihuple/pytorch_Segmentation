@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_background2"
+    tools:context=".EditProduct"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/pro_text"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="新增商品"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pro_text"
+            android:layout_marginTop="57dp"
+            android:src="@drawable/add_pro"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        >
+
+        <TextView
+            android:id="@+id/TV_add_product"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:text="商品 id："
+            />
+
+        <TextView
+            android:id="@+id/TV_add_product_name"
+            android:layout_toRightOf="@+id/TV_add_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:text=""
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:id="@+id/add_prduct_N"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:text="数量："
+            />
+
+        <EditText
+            android:id="@+id/TV_add_product_num"
+            android:layout_toRightOf="@+id/add_prduct_N"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:background="@drawable/invite_button_style"
+        android:textSize="18dp"
+        android:elevation="10dp"
+        android:padding="20dp"
+        android:layout_marginBottom="30dp"
+        />
+
+</LinearLayout>

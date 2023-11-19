@@ -1,0 +1,43 @@
+<!--pages/about/about.wxml-->
+<view class="header">
+    <image class="avator" src="/image/mine_image/mine_log.png"></image>
+    <view class="top_text">
+        <view class="top_text_one">{{nickname}}</view>
+        <view class="top_text_content">
+            <view class="top_text_two">{{desc}}</view>
+            <view class="top_text_three" hidden="{{jfHide}}">等级: {{account}}</view>
+        </view>
+    </view>
+    <image class="scan" bindtap="scan_account" src="../../image/mine_image/scanaccount.png"></image>
+    <view class="scan_account">优惠</view>
+</view>
+
+<view class="center_one">
+    <view class="form_item">
+        <image class="form_image" src="../../image/mine_image/form_name.png"></image>
+        <view class="form_view">姓名</view>
+        <view class="form_content">{{name}}</view>
+    </view>
+    <view class="form_item">
+        <image class="form_image" src="../../image/mine_image/form_phone.png"></image>
+        <view class="form_view">手机号</view>
+        <view class="form_content">{{phone}}</view>
+    </view>
+    <view class="form_item_three">
+        <image class="form_image" src="../../image/mine_image/form_id.png"></image>
+        <view class="form_view">账号ID</view>
+        <view class="form_content">{{id}}</view>
+    </view>
+</view>
+
+<view class="center_two">
+    <view class="form_item_two">
+        <image class="form_image" src="../../image/mine_image/box.png"></image>
+        <view class="form_view">当前设备编号</view>
+        <image class="form_anchor" src="../../image/mine_image/anchor.png" hidden="{{!anchor_hide}}" bindtap="equipNum"></image>
+        <view class="form_content" hidden="{{anchor_hide}}">{{equipNum}}</view>
+    </view>
+</view>
+
+<view class="logout" bindtap="toLogout" hover-class="press_style_login"><text>退出</text></view>
+

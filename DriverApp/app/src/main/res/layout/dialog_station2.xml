@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/dialog_backgroun"
+    android:elevation="10dp"
+    >
+    
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dialog_image"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/station_id"
+                style="@style/Station_dialog"
+                android:text="站点id:" />
+
+            <TextView
+                android:id="@+id/station_id_TV"
+                style="@style/dialog_value"
+                android:text="1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/station_name"
+                style="@style/Station_dialog"
+                android:text="站点名称:"
+/>
+
+            <TextView
+                android:id="@+id/station_name_TV"
+                style="@style/dialog_value"
+                android:text="补货站" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/admin_name"
+                style="@style/Station_dialog"
+                android:text="站点管理员:" />
+
+            <TextView
+                android:id="@+id/admin_name_TV"
+                style="@style/dialog_value"
+                android:text="管理员2号" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/admin_Tel"
+                android:text="电话:"
+                style="@style/Station_dialog"
+                />
+
+            <TextView
+                android:id="@+id/admin_Tel_TV"
+                style="@style/dialog_value"
+                android:text="190736734823" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Station_state"
+                style="@style/Station_dialog"
+                android:text="站点状态:" />
+
+            <TextView
+                android:id="@+id/Station_state_TV"
+                style="@style/dialog_value"
+                android:text="关闭中" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/station_addr"
+                style="@style/Station_dialog"
+                android:text="站点地址:" />
+
+            <TextView
+
+                android:id="@+id/station_addr_TV"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true"
+                android:text="四川省成都市"
+                android:textColor="@color/dialog_value"
+                android:gravity="right"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/station_detail_BT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_button"
+                android:textColor="@color/white"
+                android:elevation="10dp"
+                android:text="详情" />
+
+            <Button
+                android:id="@+id/close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:elevation="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/dialog_button"
+                android:text="关闭" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<!--shop/pages/paycode/paycode.wxml-->
+<view class="notice">请您尽快完成付款</view>
+<view class="price">￥{{price}} 元</view>
+<view class="paycode">
+    <image src="../../image/pay_code.jpg"></image>
+</view>

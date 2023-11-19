@@ -1,0 +1,22 @@
+<view class="login_text">登录</view>
+
+<view class="image_content">
+    <image class="image_logo" src="./image/logo-blue-2.png"></image>
+</view>
+
+<view class="middle">
+    <view class="form_item">
+        <image class="form_image" src="./image/Login_phone.png"></image>
+        <view class="form_view">账号</view>
+        <input class="input_setting" bindinput="inputAccount" type="text" maxlength="11" placeholder="请输入您的账号"></input>
+    </view>
+
+    <view class="form_item">
+        <image class="form_image" src="./image/Login_password.png"></image>
+        <view class="form_view">密码</view>
+        <input class="input_setting" password="true"  bindinput="inputPassword" type="text" maxlength="30"  placeholder="请输入您的密码"></input>
+    </view>
+</view>
+
+<view class="Login" hover-class="press_style_Login" bindtap="login">登录</view>
+<view class="sign" bindtap="toSign" hover-class="press_style_sign">没有账号？点击此处注册</view>

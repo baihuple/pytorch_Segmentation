@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 改变字体颜色的 .xml 文件( 属性为 color ) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="@color/nav_sel_font"/>
+    <item android:state_checked="false" android:color="@color/nav_unsel_font"/>
+</selector>

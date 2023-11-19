@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/shopping_item_background"
+    >
+
+    <ImageView
+        android:id="@+id/shopping_car_proimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/shopping_car_proname"
+        android:layout_toRightOf="@id/shopping_car_proimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="青色小棉袄"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/sig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥"
+        android:layout_toRightOf="@id/shopping_car_proimage"
+        android:layout_below="@id/shopping_car_proname"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/shoppingcar_price"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/shopping_car_proprice"
+        android:layout_below="@id/shopping_car_proname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sig"
+        android:textColor="@color/shoppingcar_price"
+        android:text="500"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        />
+    
+    <ImageView
+        android:id="@+id/shopping_car_minus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="70dp"
+        android:src="@drawable/shoppingcar_minus"
+        android:focusable="false"
+        />
+    
+    <TextView
+        android:id="@+id/shopping_car_pronum"
+        android:gravity="center"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/shopping_car_plus"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:layout_marginRight="20dp"
+        android:focusable="false"
+        android:src="@drawable/shoppingcar_plus"
+        />
+
+</RelativeLayout>

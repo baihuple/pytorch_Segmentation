@@ -1,0 +1,16 @@
+<!--index/pages/search/search.wxml-->
+<!-- 1）进行搜索-->
+<view class="header">
+  <view class="search">
+    <input type="text" bindinput="searchInput" focus="true" placeholder="请输入你想要的商品" placeholder-style="font-size:33rpx"></input>
+  </view>
+</view>
+
+<!-- 2）调用模板，显示内容[无数据则不显示内容] -->
+<import src="../../../pages/index/product_template/productList.wxml"></import>
+<view class="wrapper">
+    <view wx:for="{{list}}" wx:key="aaa">
+        <template is="list" data="{{item}}"></template>
+    </view>
+</view>
+

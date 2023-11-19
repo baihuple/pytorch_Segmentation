@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud3"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_marginTop="75dp"
+            android:layout_toRightOf="@id/cp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/password_icon"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/change_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:text="原密码："
+            />
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:id="@+id/oldPwd"
+            android:layout_centerVertical="true"
+            android:layout_width="240dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_editview"
+            android:layout_alignParentRight="true"
+            android:padding="7dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/change_pass2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:text="新密码："
+            />
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_width="240dp"
+            android:id="@+id/newPwd"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/login_editview"
+            android:padding="7dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/change_pass3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:text="确认密码："
+            />
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_width="240dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/newPwd_confirm"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/login_editview"
+            android:padding="7dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/password_change_BT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:text="修改"
+        android:background="@drawable/invite_button_style"
+        />
+
+
+
+</LinearLayout>

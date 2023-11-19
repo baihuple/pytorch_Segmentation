@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/invite_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邀约时间："
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/invite_list_time"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/invite_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021-5-15 21:52:19"
+        />
+
+    <TextView
+        android:layout_below="@id/invite_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邀约内容："
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/invited_content"
+        android:layout_below="@id/invite_list_time"
+        android:layout_toRightOf="@id/invite_time"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="邀约具体信息为"
+        android:layout_marginTop="7dp"
+        />
+
+</RelativeLayout>

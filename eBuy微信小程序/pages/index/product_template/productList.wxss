@@ -1,0 +1,68 @@
+.list{
+    background: white;
+    padding: 20rpx;
+    display: flex;
+
+    border-radius: 20rpx;
+    margin: 20rpx;
+  }
+  
+  .list .product_image{
+    border-radius: 30rpx;
+    width: 184rpx;
+    height: 184rpx;
+    margin-right: 20rpx;
+  }
+
+  .list .plus{
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 75rpx;
+    margin-right: 20rpx;
+  }
+  
+  .list .info{
+    flex: 1;
+    height: 184rpx;     /* 用作子元素定位 */
+    position: relative;
+  }
+  
+  .info .title{
+      font-weight: 500;
+    font-size: 35rpx;
+    margin-bottom: 8rpx;
+  }
+
+  .list .desc{
+    color:rgb(255, 102, 0);
+    font-size: 28rpx;
+    position: absolute;
+    margin-left: 170rpx;
+    bottom: 0;
+  }
+  
+  .list .desc2{
+    color:#666;
+    font-size: 28rpx;
+  
+    /* 2行省略 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  .buyNum{
+    font-size: 33rpx;
+    color: #999;
+  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .red{
+    color: red;
+    margin-right: 20rpx;
+  }

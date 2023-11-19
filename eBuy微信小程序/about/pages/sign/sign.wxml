@@ -1,0 +1,25 @@
+<!--注册界面-->
+<view class="sign_text">注册</view>
+
+<view class="middle">
+    <view class="form_item">
+        <image class="form_image" src="../image/name.png"></image>
+        <view class="form_view">姓名 ：</view>
+        <input class="input_setting" bindinput="inputName" type="text" maxlength="30" placeholder="请输入您的姓名"></input>
+    </view>
+
+    <view class="form_item">
+        <image class="form_image" src="../image/phone.png"></image>
+        <view class="form_view">电话 ：</view>
+        <input class="input_setting" bindinput="inputPhone" type="text" maxlength="11"  placeholder="请输入您的电话"></input>
+    </view>
+
+    <view class="form_item">
+        <image class="form_image" src="../image/password.png"></image>
+        <view class="form_view">密码 ：</view>
+        <input class="input_setting" bindinput="inputPassword" type="text" maxlength="30"  placeholder="请输入您的密码"></input>
+    </view>
+</view>
+
+<view class="sign"  hover-class="press_style_sign" bindtap="sign"><text>注册并登录</text></view>
+

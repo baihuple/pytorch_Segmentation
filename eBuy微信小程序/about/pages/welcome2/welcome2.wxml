@@ -1,0 +1,5 @@
+<div class="content">
+    <image src='../image/welcome2.png'></image>
+    <button class="next_step" type="primary" bindtap="next_step">下一步</button>
+    <button class="last_step" bindtap="last_step">上一步</button>
+</div>

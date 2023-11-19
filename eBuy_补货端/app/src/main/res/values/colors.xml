@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_unsel_font">#B8B8B8B8</color>
+    <color name="nav_sel_font">#001170</color>
+    <color name="nav_sel_bg">#0356FF</color>
+    <color name="mine_color">#007433</color>
+    <color name="mine_under_color">#BCD9C9</color>
+    <color name="mine_item">#007433</color>
+    <color name="logout_selected">#53011D</color>
+    <color name="logout_unselected">#A2053A</color>
+    <color name="button_border">#993F5E</color>
+    <color name="login_editView">#5C97DD</color>
+    <color name="login_selected">#0550AA</color>
+    <color name="login_unselected">#528FD6</color>
+    <color name="product_price">#B80202</color>
+    <color name="product_item_background">#F3F3F3</color>
+    <color name="product_fra_backgorund">#F6F6F6</color>
+    <color name="transparent">#0030BCAF</color>
+    <color name="alert_success_pressed">#084A02</color>
+    <color name="alert_success_unpressed">#A60E9502</color>
+    <color name="message_font">#13227A</color>
+    <color name="receive_message">#ECEEEC</color>
+    <color name="send_message">#3AB133</color>
+    <color name="message_list_back">#F6F6F6</color>
+    <color name="message_top">#F0EDED</color>
+</resources>

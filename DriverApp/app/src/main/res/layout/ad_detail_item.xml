@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ad_background"
+    >
+
+    <TextView
+        android:id="@+id/adt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放时间："
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/play_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2023-02-15 18:01:37"
+        android:textStyle="bold"
+        android:layout_marginLeft="130dp"
+        />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adt"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:text="播放次数："
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:id="@+id/play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="12:01:55"
+        android:textStyle="bold"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/adt"
+        />
+
+    <TextView
+        android:id="@+id/ad_item_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginRight="10dp"
+        android:text="58.3"
+        android:textColor="@color/shoppingcar_price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收益：￥"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@id/ad_item_pay"
+        android:layout_marginTop="60dp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<!-- 1）顶部搜索框 -->
+<view class="header">
+  <view class="search">
+    <navigator url="../../index/pages/search/search" hover-class="none">请输入你想要的内容</navigator>   <!-- hover-class="none" 设置点击没有效果 -->
+  </view>
+</view>
+
+<!-- 2）广告轮播图 -->
+<view class="swiper_container">    <!-- bindchange 为自动发生的轮播图切换事件 -->
+    <swiper bindchange="swiperChange" autoplay="3000" circular class="swiper">
+        <!-- test -->
+        <!-- <swiper-item>
+            <image src="../../image/index_image/ex1_sw.png"></image>
+            <view class="info">件件好礼，跳进心里</view>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../image/index_image/ex2_sw.png"></image>
+            <view class="info">玩打完超大</view>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../image/index_image/ex3_sw.png"></image>
+            <view class="info">强力出售</view>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../image/index_image/ex4_sw.png"></image>
+            <view class="info">实力出圈</view>
+        </swiper-item>
+        <view class="current">1/5</view> -->
+
+        <!-- 渲染列表 -->
+        <swiper-item wx:for="{{swiperArr}}" wx:key='aa'>
+            <image src="{{item.imageURL}}"></image>
+            <view class="info">{{item.comName}}</view>
+        </swiper-item>
+
+        <view class="current">{{current}}/{{swiperArr.length}}</view>
+    </swiper>
+</view>
+
+<!-- 3）分类列表(展示用，具体使用最后的模板)，跳转到商品展示模板 -->
+<!-- <view class="type"> -->
+  <!-- <view class="item" wx:for="{{typeData}}" wx:key="aa" >        传递导航栏参数为数字 -->
+    <!-- <navigator url="../../pages/index/sort_navigate/typeList/typeList?id={{index}}" hover-class="none">
+      <image src='{{item.imgUrl}}'></image>
+      <view class="info">{{item.title}}</view>
+    </navigator>
+  </view>
+</view> -->
+
+<!-- 4）模板引入 [正式使用]-->
+<import src="./product_template/productList.wxml"/>
+<view class="wrapper">
+    <view wx:for="{{list}}" wx:key="aaa">
+        <template is="list" data="{{item}}"></template>
+    </view>
+</view>

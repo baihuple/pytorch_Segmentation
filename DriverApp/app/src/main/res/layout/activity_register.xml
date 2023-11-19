@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Login"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="35dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/register_name" />
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/phone"
+                android:background="@drawable/register_editview"
+                android:hint="请输入姓名"
+                android:inputType="text"
+                android:maxLength="11"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/inphone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/register_phone"
+                />
+
+            <EditText
+                android:id="@+id/input_RE_phone"
+                android:layout_toRightOf="@id/inphone"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="5dp"
+                android:hint="请输入电话"
+                android:background="@drawable/register_editview"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/card"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/register_identify"
+                />
+
+            <EditText
+                android:id="@+id/input_card"
+                android:layout_toRightOf="@id/card"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:maxLength="18"
+                android:padding="5dp"
+                android:hint="请输入身份证号码"
+                android:background="@drawable/register_editview"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/inpassword"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/register_password"
+                />
+
+            <EditText
+                android:id="@+id/input_RE_password"
+                android:layout_toRightOf="@id/inpassword"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:padding="5dp"
+                android:hint="请输入密码"
+                android:background="@drawable/register_editview"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/next_step_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text=">>> 下一步"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/register_editView"
+        />
+
+</RelativeLayout>

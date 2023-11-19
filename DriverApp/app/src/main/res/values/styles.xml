@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="right_in_right_out_anim" parent="android:Animation">
+        <!--//进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/right_in_anim</item>
+        <!--//退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/right_out_anim</item>
+    </style>
+
+    <style name="control_device">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/device_control_button</item>
+    </style>
+
+<!--    补货加载框样式    -->
+    <style name="LoadingDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+</resources>
