@@ -1,8 +1,0 @@
-/* pages/index/sort_navigate/typeList/typeList.wxss */
-page{
-    background-color: #f6f6f6;
-}
-
-  /* 引入商品渲染模板  */
-  @import "../../product_template/productList.wxss"
-
