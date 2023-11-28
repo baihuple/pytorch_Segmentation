@@ -1,2 +1,2 @@
 # pytorch_Segmentation
-For pytorch_segmentation study
+Pytorch 实现的语义分割的相关网络学习
